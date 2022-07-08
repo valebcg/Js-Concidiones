@@ -24,17 +24,24 @@ function ticket() {
     Number(document.querySelector("#cant2").value) +
     Number(document.querySelector("#cant3").value);
 
-  if (isNaN(input1.value))
+    if (isNaN(input1.value)){
+      
+    }
     if (input1 == 0) {
       messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
       messageTicket.style.color = "blue";
     } else if (input1 < 10) {
       messageTicket.innerHTML = "Llevas " + input1 + " Tickets";
       messageTicket.style.color = "green";
-    } else {
-      messageTicket.innerHTML = "X Llevas Demasiados Tickets!! X";
+    } 
+    else if (input1 > 10) {
+      messageTicket.innerHTML = "x Llevas Demasiados Ticket!! X";
       messageTicket.style.color = "red";
-      messageTicket.innerHTML = "El campo ingresado no es válido";
+    } 
+    
+    else {
+      messageTicket.innerHTML = "El campo ingresado es Incorrecto";
+      messageTicket.style.color = "red";
     }
 }
 verificar.addEventListener("click", ticket);
