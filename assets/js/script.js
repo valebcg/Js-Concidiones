@@ -28,7 +28,10 @@ function ticket() {
     Number(document.querySelector("#cant2").value) +
     Number(document.querySelector("#cant3").value);
 
-  if (input1 == 0) {
+    if (isNaN(input1.value))
+
+
+    if (input1 == 0) {
     messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
     messageTicket.style.color = "blue";
   } else if (input1 < 10) {
@@ -37,7 +40,8 @@ function ticket() {
   } else {
     messageTicket.innerHTML = "X Llevas Demasiados Tickets!! X";
     messageTicket.style.color = "red";
-    messageTicket.innerHTML = "solo ingresar numero";
+    messageTicket.innerHTML = "El campo ingresado no es válido";
+
   }
 }
 verificar.addEventListener("click", ticket);
