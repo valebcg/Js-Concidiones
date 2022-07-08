@@ -5,10 +5,10 @@ image = document.querySelector("#image-2");
 contador = 0;
 function border() {
   if (contador == 0) {
-    image.style.border = "solid 2px red";
+    image.setAttribute('style', 'border:2px solid red')
     contador = 1;
   } else {
-    image.style.border = "none";
+    image.style.removeProperty ('border')
     contador = 0;
   }
 }
@@ -37,6 +37,7 @@ function ticket() {
   } else {
     messageTicket.innerHTML = "X Llevas Demasiados Tickets!! X";
     messageTicket.style.color = "red";
+    messageTicket.innerHTML = "solo ingresar numero";
   }
 }
 verificar.addEventListener("click", ticket);
