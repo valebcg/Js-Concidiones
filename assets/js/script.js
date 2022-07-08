@@ -14,24 +14,26 @@ function border() {
 }
 btn.addEventListener("click", border);
 
+
+
 // COMPRANDO TICKET SOLO HASTA 10 //
 let verificar = document.querySelector("#check-ticket");
 messageTicket = document.querySelector("#message-ticket");
 
 function ticket() {
-  input1 =
-    Number(document.querySelector("#cant1").value) +
-    Number(document.querySelector("#cant2").value) +
-    Number(document.querySelector("#cant3").value);
+    input1 =
+      Number(document.querySelector("#cant1").value) +
+      Number(document.querySelector("#cant2").value) +
+      Number(document.querySelector("#cant3").value);
 
-    if (isNaN(input1.value)){
+    if (isNaN(input1)){
       
     }
     if (input1 == 0) {
       messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
       messageTicket.style.color = "blue";
     } else if (input1 < 10) {
-      messageTicket.innerHTML = "Llevas " + input1 + " Tickets";
+      messageTicket.innerHTML = `Llevas  ${input1} Tickets`  
       messageTicket.style.color = "green";
     } 
     else if (input1 > 10) {
@@ -40,11 +42,16 @@ function ticket() {
     } 
     
     else {
-      messageTicket.innerHTML = "El campo ingresado es Incorrecto";
+      messageTicket.innerHTML = "Sólo debes ingresar números";
       messageTicket.style.color = "red";
     }
 }
 verificar.addEventListener("click", ticket);
+
+
+
+
+
 
 // INGRESANDO CONTRASEÑA 1 Y 2 //
 
