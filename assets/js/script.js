@@ -5,18 +5,14 @@ image = document.querySelector("#image-2");
 contador = 0;
 function border() {
   if (contador == 0) {
-    image.setAttribute('style', 'border:2px solid red')
+    image.setAttribute("style", "border:2px solid red");
     contador = 1;
   } else {
-    image.style.removeProperty ('border')
+    image.style.removeProperty("border");
     contador = 0;
   }
 }
 btn.addEventListener("click", border);
-
-
-
-
 
 // COMPRANDO TICKET SOLO HASTA 10 //
 let verificar = document.querySelector("#check-ticket");
@@ -28,26 +24,20 @@ function ticket() {
     Number(document.querySelector("#cant2").value) +
     Number(document.querySelector("#cant3").value);
 
-    if (isNaN(input1.value))
-
-
+  if (isNaN(input1.value))
     if (input1 == 0) {
-    messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
-    messageTicket.style.color = "blue";
-  } else if (input1 < 10) {
-    messageTicket.innerHTML = "Llevas " + input1 + " Tickets";
-    messageTicket.style.color = "green";
-  } else {
-    messageTicket.innerHTML = "X Llevas Demasiados Tickets!! X";
-    messageTicket.style.color = "red";
-    messageTicket.innerHTML = "El campo ingresado no es válido";
-
-  }
+      messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
+      messageTicket.style.color = "blue";
+    } else if (input1 < 10) {
+      messageTicket.innerHTML = "Llevas " + input1 + " Tickets";
+      messageTicket.style.color = "green";
+    } else {
+      messageTicket.innerHTML = "X Llevas Demasiados Tickets!! X";
+      messageTicket.style.color = "red";
+      messageTicket.innerHTML = "El campo ingresado no es válido";
+    }
 }
 verificar.addEventListener("click", ticket);
-
-
-
 
 // INGRESANDO CONTRASEÑA 1 Y 2 //
 
@@ -57,7 +47,8 @@ function clave() {
   password = Number(
     document.querySelector("#select1").value +
       document.querySelector("#select2").value +
-      document.querySelector("#select3").value);
+      document.querySelector("#select3").value
+  );
   if (password == "911") {
     par.innerHTML = "¡Password 1 Correcta!";
     par.style.color = "green";

@@ -1,139 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container1 {
-    background-color: #BCFFDF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .image-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  #button-border {
-    width: 90px;
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    padding: 5px;
-    border: solid 0.5px grey;
-  }
-  
-  .container2 {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    background-color: #F5FDB0;
-  }
-  
-  #image-2 {
-    width: 300px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  #image-ticket {
-    height: 400px;
-    width: 250px;
-  }
-  
-  .imagenes-ticket {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #cant1,
-  #cant2,
-  #cant3 {
-    width: 11rem;
-    margin-left: 40px;
-    margin-top: 20px;
-    padding: 4px;
-    border-radius: 20px;
-    border-color: black;
-  }
-  
-  #title {
-    text-align: center;
-    font-size: 30px;
-    background-color: #F5FDB0;
-    color: black;
-    padding: 50px;
-    padding-bottom: 5rem;
-    font-family: arima;
-  }
-  
-  #message-ticket {
-    background-color: #F5FDB0;
-    text-align: center;
-    padding: 2rem;
-    font-size: 20px;
-  }
-  
-  .btn1 {
-    display: flex;
-    justify-content: center;
-    background-color: #F5FDB0;
-    padding-bottom: 50px; 
-  }
-  
-  #check-ticket {
-    width: 80px;
-    margin: 10px;
-    padding: 5px;
-  }
-  
-  .container3 {
-    display: flex;
-    justify-content: center;
-    background-color: #F7E6AD;
-  }
-  
-  .title1 {
-    text-align: center;
-    font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    font-family: arima;
-  }
-  
-  .btn2 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-  
-  #result {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  
-  #select-number {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  #select1,
-  #select2,
-  #select3 {
-    width: 60px;
-    margin: 10px;
-  }
-  
-  #check {
-    width: 80px;
-    margin: 10px;
-    padding: 6px;
-  }
-  
-  .container-password {
-    background-color: #F7E6AD;
-  }
-  
+.container1 {
+  background-color: #bcffdf;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button-border {
+  width: 90px;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 5px;
+  border: solid 0.5px grey;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  background-color: #f5fdb0;
+}
+
+#image-2 {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#image-ticket {
+  height: 400px;
+  width: 250px;
+}
+
+.imagenes-ticket {
+  display: flex;
+  flex-direction: column;
+}
+
+#cant1,
+#cant2,
+#cant3 {
+  width: 11rem;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 4px;
+  border-radius: 20px;
+  border-color: black;
+}
+
+#title {
+  text-align: center;
+  font-size: 30px;
+  background-color: #f5fdb0;
+  color: black;
+  padding: 50px;
+  padding-bottom: 5rem;
+  font-family: arima;
+}
+
+#message-ticket {
+  background-color: #f5fdb0;
+  text-align: center;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+.btn1 {
+  display: flex;
+  justify-content: center;
+  background-color: #f5fdb0;
+  padding-bottom: 50px;
+}
+
+#check-ticket {
+  width: 80px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  background-color: #f7e6ad;
+}
+
+.title1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: arima;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#result {
+  font-size: 20px;
+  text-align: center;
+}
+
+#select-number {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#select1,
+#select2,
+#select3 {
+  width: 60px;
+  margin: 10px;
+}
+
+#check {
+  width: 80px;
+  margin: 10px;
+  padding: 6px;
+}
+
+.container-password {
+  background-color: #f7e6ad;
+}
