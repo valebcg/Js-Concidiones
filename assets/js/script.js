@@ -1,72 +1,64 @@
 // AGREGANDO Y QUITANDO BORDE A IMÁGEN //
 
-btn = document.querySelector("#button-border");
-image = document.querySelector("#image-2");
-contador = 0;
+let btn = document.querySelector("#button-border");
+let image = document.querySelector("#image-2");
+let counter = 0;
 function border() {
-  if (contador == 0) {
+  if (counter == 0) {
     image.setAttribute("style", "border:2px solid red");
-    contador = 1;
+    counter = 1;
   } else {
     image.style.removeProperty("border");
-    contador = 0;
+    counter = 0;
   }
 }
 btn.addEventListener("click", border);
 
-
-
 // COMPRANDO TICKET SOLO HASTA 10 //
-let verificar = document.querySelector("#check-ticket");
-messageTicket = document.querySelector("#message-ticket");
+let verify = document.querySelector("#check-ticket");
+let messageTicket = document.querySelector("#message-ticket");
 
 function ticket() {
-    input1 =
-      Number(document.querySelector("#cant1").value) +
-      Number(document.querySelector("#cant2").value) +
-      Number(document.querySelector("#cant3").value);
+  let input1 = document.querySelector("#cant1").value;
+  let input2 = document.querySelector("#cant2").value;
+  let input3 = document.querySelector("#cant3").value;
+  let additionInput = Number(input1) + Number(input2)+ Number(input3);
 
-    if (isNaN(input1)){
-      
-    }
-    if (input1 == 0) {
-      messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
-      messageTicket.style.color = "blue";
-    } else if (input1 < 10) {
-      messageTicket.innerHTML = `Llevas  ${input1} Tickets`  
-      messageTicket.style.color = "green";
+  if (isNaN(input1) || isNaN(input2) || isNaN(input3)) {
+    messageTicket.innerHTML = "Sólo debes ingresar números";
+    messageTicket.style.color = "red";
+  } 
+
+  else if (additionInput == 0) {
+    messageTicket.innerHTML = " No seleccionaste ningún ticket (?)";
+    messageTicket.style.color = "blue";
+  } 
+  else if (additionInput <= 10) {
+    messageTicket.innerHTML = `Llevas  ${additionInput} Tickets`;
+    messageTicket.style.color = "green";
     } 
-    else if (input1 > 10) {
-      messageTicket.innerHTML = "x Llevas Demasiados Ticket!! X";
-      messageTicket.style.color = "red";
-    } 
-    
-    else {
-      messageTicket.innerHTML = "Sólo debes ingresar números";
-      messageTicket.style.color = "red";
-    }
+
+  else {
+    messageTicket.innerHTML = "X Llevas Demasiados Ticket!! X";
+    messageTicket.style.color = "red";
+  }
 }
-verificar.addEventListener("click", ticket);
-
-
-
-
-
+verify.addEventListener("click", ticket);
 
 // INGRESANDO CONTRASEÑA 1 Y 2 //
 
-check = document.querySelector("#check");
-par = document.querySelector("#result");
+let check = document.querySelector("#check");
+let par = document.querySelector("#result");
 function clave() {
-  password = Number(
+  let password = Number(
     document.querySelector("#select1").value +
       document.querySelector("#select2").value +
       document.querySelector("#select3").value
   );
-  if (password == "911") {
+  if (password === 911) {
     par.innerHTML = "¡Password 1 Correcta!";
     par.style.color = "green";
-  } else if (password == "714") {
+  } else if (password === 714) {
     par.innerHTML = "¡Password 2 Correcta!";
     par.style.color = "green";
   } else {
